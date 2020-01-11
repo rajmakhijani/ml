@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <table border=2>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>M.No.</th>
+            </tr>
+            {{data}}
+            {% for d in data %}
+                <tr>{{ d.name }}</tr>
+                <tr>{{ d.address }}</tr>
+                <tr>{{ d.email }}</tr>
+                <tr>{{ d.m_no }}</tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
